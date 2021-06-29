@@ -3,16 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
 
 <body>
-    <h1>Formulário de pesquisa. Sua avaliação é sempre Importante</h1>
     <div>
+        <h1>Formulário de pesquisa. Sua avaliação é sempre Importante</h1>
         <form action="">
-            
+            <label for="nome">Nome:</label><br> <input type="text" id="nome" name="name" placeholder="Digite aqui o seu nome."/><br>
+            <label for="email">Email:</label><br> <input type="email" id="email" name="email" placeholder="Digite seu email."><br>
+            <label for="idade">Idade(Opcional):</label><br> <input type="text" id="idade" name="idade" placeholder="idade"><br>
+            <label for="selecione">Selecione a opção que melhor referencia a sua ocupação:</label><br>
+            <select name="ocupação" id="selecione">
+                <option value="selecione">Selecione</option>
+                <option value="Estudante">Estudante</option>
+                <option value="Est.Integral">Estudante integral</option>
+                <option value="Trab.Integral">Trabalhador o tempo todo</option>
+                <option value="Outro">Outro</option>
+            </select><br>
+            <fieldset>
+                <legend>Voce nos recomendaria a um amigo?</Legend><br> 
+                    <input type="radio" id="sim" name="recomendo" checked><label for="sim">Com certeza
+                    </label><br>
+                    <input type="radio" id="outros" name="recomendo"><label for="outros">Talvez
+                    </label><br>
+                    <input type="radio" id="nao" name="recomendo"><label for="nao">Não
+                    </label>
+            </fieldset>
+            <label for="preferencia">Qual de nossas ferramentas você prefere?<br>
+                <select name="prefer" id="preferencia">
+                    <option value="Selecione">Selecione a opção</option>
+                    <option value="Projetos">Projetos</option>
+                    <option value="Desafios">Desafios</option>
+                    <option value="Comunidade">Comunidade</option>
+                    <option value="Código Livre">Código Livre</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>O que você gostaria que fosse melhorado?(Margue as opções conrespondentes, pode ser mais de uma.)</legend>
+                    <input type="checkbox" id="p_front_end"><label for="p_front_end">Projetos Front End</label><br>
+                    <input type="checkbox" id="p_back_end"><label for="p_back_end">Projetos Back End</label><br>
+                    <input type="checkbox" id="Interface"><label for="Interface">Interface</label><br>
+                    <input type="checkbox" id="Divulgacao"><label for="Divulgacao">Divulgação</label><br>
+                    <input type="checkbox" id="Desafios"><label for="Desafios">Desafios</label><br>
+                    <input type="checkbox" id="Comunidade_codigo_livre"><label for="Comunidade_codigo_livre">Comunidade de Código Livre</label><br>
+                    <input type="checkbox" id="Projetos"><label for="Projetos">Projetos</label><br>
+                    <input type="checkbox" id="forum"><label for="forum">Chat de Conversas</label><br>
+                    <input type="checkbox" id="Ajuda"><label for="Ajuda">Fórum de ajudas</label><br>
+            </fieldset>
+            <label for="opiniao">Alguma opinião ou comentário?<textarea id="opiniao" cols="159" rows="4"></textarea></label>
         </form>
     </div>
 </body>
