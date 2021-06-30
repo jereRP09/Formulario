@@ -11,11 +11,11 @@
         <h1>Formulário de pesquisa.</h1>
         <h2>(Sua avaliação é sempre Importante)</h2>
         <form action="">
-            <label for="nome">Nome:</label><br> <input type="text" id="nome" name="name" placeholder="Digite aqui o seu nome."/><br>
-            <label for="email">Email:</label><br> <input type="email" id="email" name="email" placeholder="Digite seu email."><br>
-            <label for="idade">Idade(Opcional):</label><br> <input type="text" id="idade" name="idade" placeholder="idade"><br>
+            <label for="nome">Nome:</label><br> <input type="text" class="d_pessoais" id="nome" name="name" placeholder="Digite aqui o seu nome."/><br>
+            <label for="email">Email:</label><br> <input type="email" class="d_pessoais" id="email" name="email" placeholder="Digite seu email."><br>
+            <label for="idade">Idade(Opcional):</label><br> <input type="text" class="d_pessoais" id="idade" name="idade" placeholder="idade"><br>
             <label for="selecione">Selecione a opção que melhor referencia a sua ocupação:</label><br>
-            <select name="ocupação" id="selecione">
+            <select name="ocupação" id="selecione" class="b_selecionar">
                 <option value="selecione">Selecione</option>
                 <option value="Estudante">Estudante</option>
                 <option value="Est.Integral">Estudante integral</option>
@@ -31,17 +31,16 @@
                     <input type="radio" id="nao" name="recomendo"><label for="nao">Não
                     </label>
             </fieldset>
-            <label for="preferencia">Qual de nossas ferramentas você prefere?<br>
-                <select name="prefer" id="preferencia">
+            <label for="preferencia">Qual de nossas ferramentas você prefere?</label><br>
+                <select name="prefer" id="preferencia" class="b_selecionar">
                     <option value="Selecione">Selecione a opção</option>
                     <option value="Projetos">Projetos</option>
                     <option value="Desafios">Desafios</option>
                     <option value="Comunidade">Comunidade</option>
                     <option value="Código Livre">Código Livre</option>
                 </select>
-            </label>
             <fieldset>
-                <legend>O que você gostaria que fosse melhorado?(Margue as opções conrespondentes, pode ser mais de uma.)</legend>
+                <legend>O que você gostaria que fosse melhorado?</legend>
                     <input type="checkbox" id="p_front_end"><label for="p_front_end">Projetos Front End</label><br>
                     <input type="checkbox" id="p_back_end"><label for="p_back_end">Projetos Back End</label><br>
                     <input type="checkbox" id="Interface"><label for="Interface">Interface</label><br>
@@ -52,7 +51,7 @@
                     <input type="checkbox" id="forum"><label for="forum">Chat de Conversas</label><br>
                     <input type="checkbox" id="Ajuda"><label for="Ajuda">Fórum de ajudas</label><br>
             </fieldset>
-            <label for="opiniao">Alguma opinião ou comentário?<textarea id="opiniao" cols="96" rows="4"></textarea></label>
+            <label for="opiniao">Alguma opinião ou comentário?</label><br><textarea id="opiniao" cols="96" rows="4"></textarea>
         </form>
 </body>
 
