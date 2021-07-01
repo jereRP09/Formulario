@@ -8,51 +8,56 @@
 </head>
 
 <body>
+    <div id="titulo">
         <h1>Formulário de pesquisa.</h1>
         <h2>(Sua avaliação é sempre Importante)</h2>
-        <form action="">
-            <label for="nome">Nome:</label><br> <input type="text" class="d_pessoais" id="nome" name="name" placeholder="Digite aqui o seu nome."/><br>
-            <label for="email">Email:</label><br> <input type="email" class="d_pessoais" id="email" name="email" placeholder="Digite seu email."><br>
-            <label for="idade">Idade(Opcional):</label><br> <input type="text" class="d_pessoais" id="idade" name="idade" placeholder="idade"><br>
-            <label for="selecione">Selecione a opção que melhor referencia a sua ocupação:</label><br>
-            <select name="ocupação" id="selecione" class="b_selecionar">
-                <option value="selecione">Selecione</option>
-                <option value="Estudante">Estudante</option>
-                <option value="Est.Integral">Estudante integral</option>
-                <option value="Trab.Integral">Trabalhador o tempo todo</option>
-                <option value="Outro">Outro</option>
+    </div>
+    <form action="">
+        <label for="nome" class="texto">Nome:</label><br> <input type="text" class="d_pessoais" id="nome" name="name" placeholder="Digite aqui o seu nome."/><br>
+        <label for="email" class="texto">Email:</label><br> <input type="email" class="d_pessoais" id="email" name="email" placeholder="Digite seu email."><br>
+        <label for="idade" class="texto">Idade(Opcional):</label><br> <input type="text" class="d_pessoais" id="idade" name="idade" placeholder="Idade"><br>
+        <label for="selecione" class="texto">Selecione a opção que melhor referencia a sua ocupação:</label><br>
+        <select name="ocupação" id="selecione" class="b_selecionar">
+            <option value="selecione">Selecione</option>
+            <option value="Estudante">Estudante</option>
+            <option value="Est.Integral">Estudante integral</option>
+            <option value="Trab.Integral">Trabalhador o tempo todo</option>
+            <option value="Outro">Outro</option>
+        </select><br>
+        <fieldset>
+            <legend class="texto">Voce nos recomendaria a um amigo?</Legend><br> 
+                <input type="radio" id="sim" name="recomendo" class="b_radius" checked><label for="sim" class="c_radius">Com certeza
+                </label><br>
+                <input type="radio" id="outros" name="recomendo" class="b_radius"><label for="outros" class="c_radius">Talvez
+                </label><br>
+                <input type="radio" id="nao" name="recomendo" class="b_radius"><label for="nao" class="c_radius">Não
+                </label>
+        </fieldset>
+        <label for="preferencia" class="texto">Qual de nossas ferramentas você prefere?</label><br>
+            <select name="prefer" id="preferencia" class="b_selecionar">
+                <option value="Selecione">Selecione a opção</option>
+                <option value="Projetos">Projetos</option>
+                <option value="Desafios">Desafios</option>
+                <option value="Comunidade">Comunidade</option>
+                <option value="Código Livre">Código Livre</option>
             </select><br>
-            <fieldset>
-                <legend>Voce nos recomendaria a um amigo?</Legend><br> 
-                    <input type="radio" id="sim" name="recomendo" checked><label for="sim">Com certeza
-                    </label><br>
-                    <input type="radio" id="outros" name="recomendo"><label for="outros">Talvez
-                    </label><br>
-                    <input type="radio" id="nao" name="recomendo"><label for="nao">Não
-                    </label>
-            </fieldset>
-            <label for="preferencia">Qual de nossas ferramentas você prefere?</label><br>
-                <select name="prefer" id="preferencia" class="b_selecionar">
-                    <option value="Selecione">Selecione a opção</option>
-                    <option value="Projetos">Projetos</option>
-                    <option value="Desafios">Desafios</option>
-                    <option value="Comunidade">Comunidade</option>
-                    <option value="Código Livre">Código Livre</option>
-                </select>
-            <fieldset>
-                <legend>O que você gostaria que fosse melhorado?</legend>
-                    <input type="checkbox" id="p_front_end"><label for="p_front_end">Projetos Front End</label><br>
-                    <input type="checkbox" id="p_back_end"><label for="p_back_end">Projetos Back End</label><br>
-                    <input type="checkbox" id="Interface"><label for="Interface">Interface</label><br>
-                    <input type="checkbox" id="Divulgacao"><label for="Divulgacao">Divulgação</label><br>
-                    <input type="checkbox" id="Desafios"><label for="Desafios">Desafios</label><br>
-                    <input type="checkbox" id="Comunidade_codigo_livre"><label for="Comunidade_codigo_livre">Comunidade de Código Livre</label><br>
-                    <input type="checkbox" id="Projetos"><label for="Projetos">Projetos</label><br>
-                    <input type="checkbox" id="forum"><label for="forum">Chat de Conversas</label><br>
-                    <input type="checkbox" id="Ajuda"><label for="Ajuda">Fórum de ajudas</label><br>
-            </fieldset>
-            <label for="opiniao">Alguma opinião ou comentário?</label><br><textarea id="opiniao" cols="96" rows="4"></textarea>
-        </form>
+        <fieldset>
+            <legend class="texto">O que você gostaria que fosse melhorado?</legend>
+                <input type="checkbox" id="p_front_end" class="b_checkbox"><label for="p_front_end" class="c_checkbox">Projetos Front End</label><br>
+                <input type="checkbox" id="p_back_end" class="b_checkbox"><label for="p_back_end" class="c_checkbox">Projetos Back End</label><br>
+                <input type="checkbox" id="Interface" class="b_checkbox"><label for="Interface" class="c_checkbox">Interface</label><br>
+                <input type="checkbox" id="Divulgacao" class="b_checkbox"><label for="Divulgacao" class="c_checkbox">Divulgação</label><br>
+                <input type="checkbox" id="Desafios" class="b_checkbox"><label for="Desafios"
+                class="c_checkbox">Desafios</label><br>
+                <input type="checkbox" id="Comunidade_codigo_livre" class="b_checkbox"><label for="Comunidade_codigo_livre" class="c_checkbox">Comunidade de Código Livre</label><br>
+                <input type="checkbox" id="Projetos" class="b_checkbox"><label for="Projetos" class="c_checkbox">Projetos</label><br>
+                <input type="checkbox" id="forum" class="b_checkbox"><label for="forum" class="c_checkbox">Chat de Conversas</label><br>
+                <input type="checkbox" id="Ajuda" class="b_checkbox"><label for="Ajuda" class="c_checkbox">Fórum de ajudas</label><br>
+        </fieldset><br>
+        <label for="opiniao" class="texto">Alguma opinião ou comentário?</label><br>
+        <textarea id="opiniao" cols="96" rows="4"></textarea>
+        <input type="submit" id="enviar"><label for="enviar"><img src="imagens/btn-enviados-botao.svg.med.png"></label>
+    </form>
 </body>
 
 </html>

@@ -1,81 +1,137 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis:wght@500&display=swap');
+*{
+    padding: 0mm;
+    margin: 0mm;
+    box-sizing: border-box;
+    border: 0mm;
+}
 body{
-    background-color: #525292;
+    background-color:rgba(71, 61, 139, 0.842);
+    width: 100%;
+    height: 100%;
 }
-h1{
+div#titulo h1{
+    font-family:'Dosis',sans-serif  ;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color:#fff;
+}
+div#titulo h2{
+    font-family:'Confortaa',cursive;
     text-align: center;
     position: relative;
-    left: 50%;
-    top: 40px;
-    transform: translate(-50%,-50%);
-    font-family:'Poppins', sans-serif;
-    font-size: 26pt;
-    color: #fff;
-}
-h2{
-    text-align: center;
-    position: relative;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%,-50%);
-    font-family:'Big Shoulders Stencil Display', cursive;
-    font-size: 17pt;
-    color: #fff;
+    top: 31px;
+    color:#fff;
 }
 form{
-    background-color:#26263e ;
-    max-width: 700px;
-    width:70%;
-    padding: 40px;
-    position: relative;
-    left: 50%;
-    top: 700px;
-    transform: translate(-50%,-50%);
-}
-label{
-    font-family:'Poppins', sans-serif;
-    font-size: 14pt;
-    color: #fff;
-    display: flex;
-    margin-bottom: -12px;
-}
-legend{
-    font-family:'Poppins', sans-serif;
-    color: #fff;
-}
-input.d_pessoais{
-    max-width: 700px;
-    width: 100%;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
     position:relative;
-    left: 50%;
+    top: 70px;
+    max-width: 800px;
+    min-width: 320px;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    margin: auto;
+    background-color: rgba(0, 0, 139, 0.479);
+}
+.texto{
+    position: relative;
+    max-width: 700px;
+    width: 80%;
+    left: 20px;
+    top: 30px;
+    display: flex;
+    font-size: 14pt;
+    font-family: arial;
+    color: #fff;
+    margin-bottom: 0px;
+}
+.d_pessoais{
+    position: relative;
+    left: 20px;
+    top: 30px;
+    display: flex;
+    height: 30px;
+    max-width: 800px;
+    width: 95%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+.b_selecionar{
+    border: 1px solid black;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    max-width: 800px;
+    width: 95%;
+    height: 30px;
+    display: flex;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    border-radius: 8px;
+}
+.b_radius{
+    position: relative;
     top: 20px;
-    transform: translate(-50%,-50%);
+    left: 5px;
+    margin-bottom: 10px;
 }
-input.d_pessoais::placeholder{
-    font-size: 12pt;
+input[type=radio] {
+    border: 0px;
+    width: 10%;
+    height: 20px;
+}
+.c_radius{
     position: relative;
-    margin-top: 5px;
-    margin-left: 3px;
-    left: 50%;
     top: 15px;
-    transform: translate(-50%,-50%);
+    left:-5px;
+    color: #fff;
+    font-size: 14;
+    font-family: arial;
 }
-select.b_selecionar{
-   position: relative;
-   max-width: 700px;
-   width: 100%;
-   padding-bottom: 15px;
-   margin-bottom: 20px;
-   left: 50%;
-   top: 15px;
-   transform: translate(-50%,-50%);
-}
-option{
-    display: block;
+.b_checkbox{
     position: relative;
-    
+    top: 40px;
+    left: 5px;
+    margin-bottom: 10px;
 }
+input[type=checkbox] {
+    border: 0px;
+    width: 10%;
+    height: 20px;
+}
+.c_checkbox{
+    position: relative;
+    top: 35px;
+    left:-5px;
+    color: #fff;
+    font-size: 14;
+    font-family: arial;
+}
+textarea{
+    position: relative;
+    left: 15px;
+    max-width: 800px;
+    width: 95%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+input[type=submit]{
+    opacity: 0;
+}
+img{
+    position: relative;
+    max-width: 800px;
+    width:100%;
+    height:70px ;
+    margin-bottom: 40px;
+}
+
